@@ -16,7 +16,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
+    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden mt-5">
       <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-primary/5" />
       
       <div className="container mx-auto px-4 relative z-10">
@@ -32,7 +32,7 @@ const HeroSection = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6"
           >
-            <span className="bg-gradient-to-r from-primary via-blue-400 to-purple-400 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-primary via-blue-400 to-purple-400 bg-clip-text text-transparent mt-5">
               Hi, I'm Chika Egulemu
             </span>
             <br />
