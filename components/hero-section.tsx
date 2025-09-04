@@ -1,24 +1,35 @@
 "use client";
 
-import { ArrowRight, Download } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import TypingAnimation from './typing-animation';
-import { motion } from 'framer-motion';
+import { ArrowRight, Download } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import TypingAnimation from "./typing-animation";
+import { motion } from "framer-motion";
 
 const HeroSection = () => {
   const skills = [
-    'HTML', 'CSS', 'JavaScript', 'React', 'Redux Toolkit', 
-    'Next.js', 'MongoDB', 'APIs', 'TypeScript', 'Tailwind CSS'
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "React",
+    "Redux Toolkit",
+    "Next.js",
+    "MongoDB",
+    "APIs",
+    "TypeScript",
+    "Tailwind CSS",
   ];
 
   const scrollToSection = (id: string) => {
-    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden mt-5">
+    <section
+      id="home"
+      className="min-h-screen flex items-center justify-center relative overflow-hidden mt-20"
+    >
       <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-primary/5" />
-      
+
       <div className="container mx-auto px-4 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -47,8 +58,9 @@ const HeroSection = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed"
           >
-            Enthusiastic, growth-oriented, collaborative developer with 5 months of experience 
-            building modern web applications and solving real-world problems.
+            Enthusiastic, growth-oriented, collaborative developer with 5 months
+            of experience building modern web applications and solving
+            real-world problems.
           </motion.p>
 
           <motion.div
@@ -72,14 +84,14 @@ const HeroSection = () => {
             className="flex flex-col sm:flex-row gap-4 justify-center items-center"
           >
             <Button
-              onClick={() => scrollToSection('experience')}
+              onClick={() => scrollToSection("experience")}
               className="group bg-primary hover:bg-primary/90 text-black font-semibold px-8 py-3 text-lg"
             >
               View Projects
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Button>
             <Button
-              onClick={() => scrollToSection('contact')}
+              onClick={() => scrollToSection("contact")}
               variant="outline"
               className="border-primary/50 hover:bg-primary/10 px-8 py-3 text-lg"
             >
@@ -96,7 +108,9 @@ const HeroSection = () => {
             <div className="flex justify-center">
               <div className="w-px h-16 bg-gradient-to-b from-primary/50 to-transparent" />
             </div>
-            <p className="text-sm text-muted-foreground mt-4">Scroll to explore</p>
+            <p className="text-sm text-muted-foreground mt-4">
+              Scroll to explore
+            </p>
           </motion.div>
         </motion.div>
       </div>
