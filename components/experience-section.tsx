@@ -30,7 +30,7 @@ const ExperienceSection = () => {
         "Collaborated closely with a cross-functional team to design, develop, and pitch the solution",
         "Recognized as 2nd place winner for addressing food security challenges with an innovative approach",
       ],
-      tech: ["React", "JavaScript", "APIs"],
+      tech: ["React", "Node.js", "MongoDB", "Africa's Talking APIs"],
       color: "from-yellow-400 to-orange-500",
     },
   ];

@@ -19,6 +19,11 @@ const HeroSection = () => {
     "Tailwind CSS",
   ];
 
+  const startDate = new Date("2024-04-01");
+  const monthsOfExp = Math.floor(
+    (new Date().getTime() - startDate.getTime()) / (1000 * 60 * 60 * 24 * 30)
+  );
+
   const scrollToSection = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
   };
@@ -47,7 +52,10 @@ const HeroSection = () => {
               Hi, I'm Chika Egulemu
             </span>
             <br />
-            <span className="text-2xl md:text-3xl lg:text-4xl text-muted-foreground font-normal">
+            <span
+              role="doc-subtitle"
+              className="text-2xl md:text-3xl lg:text-4xl text-muted-foreground font-normal"
+            >
               Frontend Developer
             </span>
           </motion.h1>
@@ -58,7 +66,10 @@ const HeroSection = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed"
           >
-            Enthusiastic, growth-oriented, collaborative developer with 5 months
+            Enthusiastic, growth-oriented, and collaborative developer with{" "}
+            <span className="font-semibold text-primary">
+              {monthsOfExp}+ months
+            </span>
             of experience building modern web applications and solving
             real-world problems.
           </motion.p>
@@ -86,6 +97,7 @@ const HeroSection = () => {
             <Button
               onClick={() => scrollToSection("experience")}
               className="group bg-primary hover:bg-primary/90 text-black font-semibold px-8 py-3 text-lg"
+              aria-label="View Projects"
             >
               View Projects
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -94,8 +106,19 @@ const HeroSection = () => {
               onClick={() => scrollToSection("contact")}
               variant="outline"
               className="border-primary/50 hover:bg-primary/10 px-8 py-3 text-lg"
+              aria-label="Contact Me"
             >
               Contact Me
+            </Button>
+            <Button
+              asChild
+              className="bg-secondary hover:bg-secondary/90 px-8 py-3 text-lg"
+              aria-label="Download CV"
+            >
+              <a href="/Chika-Egulemu-CV.pdf" download>
+                Download CV
+                <Download className="ml-2 w-5 h-5" />
+              </a>
             </Button>
           </motion.div>
 
