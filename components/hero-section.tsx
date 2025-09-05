@@ -108,7 +108,7 @@ const HeroSection = () => {
               className="bg-secondary hover:bg-secondary/90 px-8 py-3 text-lg"
               aria-label="Download CV"
             >
-              <a href="/Chika-Egulemu-CV.pdf" download>
+              <a href="/components/Chika-Egulemu-Resume.pdf" download>
                 Download CV
                 <Download className="ml-2 w-5 h-5" />
               </a>
