@@ -19,11 +19,6 @@ const HeroSection = () => {
     "Tailwind CSS",
   ];
 
-  const startDate = new Date("2024-04-01");
-  const monthsOfExp = Math.floor(
-    (new Date().getTime() - startDate.getTime()) / (1000 * 60 * 60 * 24 * 30)
-  );
-
   const scrollToSection = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
   };
@@ -67,9 +62,7 @@ const HeroSection = () => {
             className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed"
           >
             Enthusiastic, growth-oriented, and collaborative developer with{" "}
-            <span className="font-semibold text-primary">
-              {monthsOfExp}+ months
-            </span>
+            <span className="font-semibold text-primary">5 months </span>
             of experience building modern web applications and solving
             real-world problems.
           </motion.p>

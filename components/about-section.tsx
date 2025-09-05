@@ -1,30 +1,34 @@
 "use client";
 
-import { motion } from 'framer-motion';
-import { Code, Users, Lightbulb, Target } from 'lucide-react';
+import { motion } from "framer-motion";
+import { Code, Users, Lightbulb, Target } from "lucide-react";
 
 const AboutSection = () => {
   const traits = [
     {
       icon: <Code className="w-6 h-6" />,
       title: "Problem Solver",
-      description: "Passionate about tackling complex challenges and building user-friendly applications that make a real difference."
+      description:
+        "Passionate about tackling complex challenges and building user-friendly applications that make a real difference.",
     },
     {
       icon: <Users className="w-6 h-6" />,
       title: "Team Collaborator",
-      description: "Strong believer in teamwork and knowledge sharing. I thrive in collaborative environments and value diverse perspectives."
+      description:
+        "Strong believer in teamwork and knowledge sharing. I thrive in collaborative environments and value diverse perspectives.",
     },
     {
       icon: <Lightbulb className="w-6 h-6" />,
       title: "Continuous Learner",
-      description: "Always eager to learn new technologies and methodologies. I stay current with industry trends and best practices."
+      description:
+        "Always eager to learn new technologies and methodologies. I stay current with industry trends and best practices.",
     },
     {
       icon: <Target className="w-6 h-6" />,
       title: "Growth Mindset",
-      description: "Adaptable and resilient, I see every challenge as an opportunity to grow and improve my craft."
-    }
+      description:
+        "Adaptable and resilient, I see every challenge as an opportunity to grow and improve my craft.",
+    },
   ];
 
   return (
@@ -54,15 +58,24 @@ const AboutSection = () => {
             className="space-y-6"
           >
             <div className="bg-card/50 backdrop-blur-sm border border-primary/20 rounded-xl p-8">
-              <h3 className="text-2xl font-bold mb-4 text-primary">My Journey</h3>
+              <h3 className="text-2xl font-bold mb-4 text-primary">
+                My Journey
+              </h3>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                As a passionate frontend developer with 5 months of hands-on experience, I've discovered my love for 
-                creating digital solutions that bridge the gap between innovative design and practical functionality.
+                I’m a passionate frontend developer with 5 months of intensive
+                training at GoMyCode, currently expanding my skills into backend
+                development to grow as a full-stack engineer. My journey began
+                with curiosity for how design and code intersect, and it has
+                evolved into a strong drive to create intuitive, user-friendly
+                digital solutions.{" "}
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                My journey began with curiosity and has evolved into a deep commitment to crafting exceptional user 
-                experiences. I believe in the power of technology to solve real-world problems and am constantly 
-                pushing myself to learn and grow in this ever-evolving field.
+                While frontend is my core strength, I’m actively building my
+                backend knowledge to deliver more complete, impactful
+                applications. I believe technology has the power to solve
+                real-world challenges, and I’m eager to keep learning,
+                collaborating, and contributing to projects that make a
+                difference.
               </p>
             </div>
 
@@ -75,10 +88,13 @@ const AboutSection = () => {
             >
               <p className="text-lg font-mono text-center">
                 <span className="text-primary">"</span>
-                Continuous growth is not a destination, but a journey of endless possibilities.
+                Continuous growth is not a destination, but a journey of endless
+                possibilities.
                 <span className="text-primary">"</span>
               </p>
-              <p className="text-right text-sm text-muted-foreground mt-2">- My Developer Philosophy</p>
+              <p className="text-right text-sm text-muted-foreground mt-2">
+                - My Developer Philosophy
+              </p>
             </motion.div>
           </motion.div>
 
