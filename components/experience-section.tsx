@@ -12,9 +12,29 @@ import {
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { url } from "node:inspector";
 
 const ExperienceSection = () => {
   const experiences = [
+    {
+      type: "hackathon",
+      title: "GDG Hackathon",
+      position: "NIL",
+      date: "September 2025",
+      location: "GOMYCODE Yaba, Lagos",
+      urlLink: "https://amala-spots-one.vercel.app/",
+      description:
+        "Designed and developed an Amala discovery platform — a full-stack web app connecting vendors and consumers, built to map, review, and order from Lagos’ top Amala spots.",
+      details: [
+        "Built a scalable frontend with Next.js (App Router) and a secure Node.js/Express backend",
+        "Implemented vendor registration, authentication, interactive maps, and delivery filters",
+        "Developed community features including reviews, comments, and a fair trending algorithm",
+        "Integrated Google Maps API and WhatsApp for seamless vendor-consumer interactions",
+        "Focused on user-centered design, ensuring a simple yet scalable registration process",
+      ],
+      tech: ["React", "Express,js", "MongoDB", "Google APIs"],
+      color: "from-yellow-400 to-orange-500",
+    },
     {
       type: "hackathon",
       title: "Africa's Talking Hackathon",
@@ -22,6 +42,7 @@ const ExperienceSection = () => {
       date: "August 2025",
       location: "GOMYCODE Yaba, Lagos",
       icon: <Trophy className="w-6 h-6" />,
+      urlLink: "https://github.com/Omal2022/AgriSOS-App",
       description:
         "Developed Agri App during Africa’s Talking Hackathon — a solution designed to empower farmers with real-time access to crop, weather, and market information.",
       details: [
@@ -117,7 +138,9 @@ const ExperienceSection = () => {
           {experiences.map((exp, index) => (
             <Card
               key={index}
-              className="bg-card/50 backdrop-blur-sm border border-primary/20 hover:border-primary/40 transition-all duration-300"
+              className={`bg-card/50 backdrop-blur-sm border border-primary/20 hover:border-primary/40 transition-all duration-300${
+                index !== experiences.length - 1 ? " mb-10" : ""
+              }`}
             >
               <CardHeader>
                 <div className="flex items-center gap-4 mb-4">
@@ -168,6 +191,23 @@ const ExperienceSection = () => {
                     </Badge>
                   ))}
                 </div>
+
+                {exp.urlLink !== "#" && (
+                  <a
+                    href={exp.urlLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full"
+                  >
+                    <Button
+                      variant="outline"
+                      className="mt-10 p-6 w-[200px] border-primary/50 hover:bg-primary/10 group"
+                    >
+                      View Project
+                      <ExternalLink className="ml-2 w-4 h-4 group-hover:scale-110 transition-transform" />
+                    </Button>
+                  </a>
+                )}
               </CardContent>
             </Card>
           ))}

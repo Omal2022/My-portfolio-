@@ -62,20 +62,25 @@ const AboutSection = () => {
                 My Journey
               </h3>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                I’m a passionate frontend developer with 5 months of intensive
-                training at GoMyCode, currently expanding my skills into backend
-                development to grow as a full-stack engineer. My journey began
-                with curiosity for how design and code intersect, and it has
-                evolved into a strong drive to create intuitive, user-friendly
-                digital solutions.{" "}
+                Motivated and detail-oriented Full Stack Developer with 1 year of
+                continuous learning and hands-on practice, including 5 months of
+                intensive training at GoMyCode. Skilled in modern JavaScript
+                frameworks and libraries such as React, Next.js, Redux Toolkit,
+                and proficient in server-side development with Node.js, Express,
+                EJS, and databases including MongoDB and PostgreSQL. Experienced
+                in implementing authentication, RESTful APIs, and scalable
+                architectures. Adept at using Git and GitHub for version control
+                and collaborative development. Passionate about writing clean,
+                maintainable code, solving complex problems, and continuously
+                improving technical expertise. Eager to contribute to innovative
+                projects and grow within a dynamic development team{" "}
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                While frontend is my core strength, I’m actively building my
-                backend knowledge to deliver more complete, impactful
-                applications. I believe technology has the power to solve
-                real-world challenges, and I’m eager to keep learning,
-                collaborating, and contributing to projects that make a
-                difference.
+                I’m actively building my backend knowledge to deliver more
+                complete, impactful applications. I believe technology has the
+                power to solve real-world challenges, and I’m eager to keep
+                learning, collaborating, and contributing to projects that make
+                a difference.
               </p>
             </div>
 

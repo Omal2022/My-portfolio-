@@ -9,14 +9,16 @@ const HeroSection = () => {
   const skills = [
     "HTML",
     "CSS",
+    "Tailwind/Bootstrap CSS",
     "JavaScript",
+    "TypeScript",
     "React",
     "Redux Toolkit",
     "Next.js",
     "MongoDB",
     "APIs",
-    "TypeScript",
-    "Tailwind CSS",
+    "Node.js",
+    "Express.js",
   ];
 
   const scrollToSection = (id: string) => {
@@ -51,7 +53,7 @@ const HeroSection = () => {
               role="doc-subtitle"
               className="text-2xl md:text-3xl lg:text-4xl text-muted-foreground font-normal"
             >
-              Frontend Developer
+              Full-stack Developer
             </span>
           </motion.h1>
 
@@ -62,9 +64,9 @@ const HeroSection = () => {
             className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed"
           >
             Enthusiastic, growth-oriented, and collaborative developer with{" "}
-            <span className="font-semibold text-primary">5 months </span>
-            of experience building modern web applications and solving
-            real-world problems.
+            <span className="font-semibold text-primary">5 months </span>{" "}
+            intense taining at GoMyCode learning and building modern web
+            applications and solving real-world problems.
           </motion.p>
 
           <motion.div
