@@ -41,7 +41,6 @@ const ExperienceSection = () => {
       position: "2nd Place Winner",
       date: "August 2025",
       location: "GOMYCODE Yaba, Lagos",
-      icon: <Trophy className="w-6 h-6" />,
       urlLink: "https://github.com/Omal2022/AgriSOS-App",
       description:
         "Developed Agri App during Africa’s Talking Hackathon — a solution designed to empower farmers with real-time access to crop, weather, and market information.",
