@@ -147,7 +147,7 @@ const ContactSection = () => {
                 <h4 className="font-semibold">Available For</h4>
               </div>
               <ul className="space-y-2 text-muted-foreground">
-                <li>• Frontend Development Opportunities</li>
+                <li>• Fullstack Development Opportunities</li>
                 <li>• Remote & On-site Collaborations</li>
                 <li>• Open Source Contributions</li>
                 <li>• Technical Discussions & Mentorship</li>
